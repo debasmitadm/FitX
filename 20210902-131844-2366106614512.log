@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: iamdebdatto@gmail.com
+Date: Thu, 02 Sep 2021 07:48:44 -0000
+Message-ID: <163056892488.27812.3653352736564747074@LAPTOP-6TC1APM4>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/Mw/ascnn8-f73c45e73f8c1e6c18a68440e48f15c5/
+
+Your username, in case you’ve forgotten: Debdatto
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

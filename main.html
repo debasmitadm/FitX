@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<style> 
+    body {
+      background-image: url("https://res.cloudinary.com/dm0710/image/upload/v1631607797/our%20team/WhatsApp_Image_2021-09-14_at_13.30.09_2_whqzil.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    </style>
+    <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid">
+      <a href="#"><img src="https://res.cloudinary.com/dm0710/image/upload/b_rgb:000000,bo_1px_solid_rgb:425877,c_fit,g_center,o_100,q_auto:best,r_0,w_101/v1631563445/our%20team/me_o2nzup.jpg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a  class="nav-link " aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'about' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'contact' %}">Our Developers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          
+        </ul>
+        <ul class="nav justify-content-end">
+          <li class="nav-item"> 
+            <a class="nav-link" href="{% url 'login' %}">Get Started</a>
+          </li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+  </head>
+  <font color="#FFFFFF">
+
+<h2 align="center">Select your gender.</h2>
+    <p align="center">Select your gender to get personalized workouts for optimum results.
+<br><br><br><p align="center"><a href="{% url 'female' %}"><button>FEMALE</button></a></p>
+<p align="center"><a href="{% url 'male' %}"><button>MALE</button></a></p>
+
+{% endblock %}
+
+

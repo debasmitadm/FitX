@@ -1,0 +1,199 @@
+
+{% extends 'base.html' %}
+
+{% block title %}FitX-Workout made easy!{% endblock %}
+
+{% block content %}
+<style> 
+  body {
+    background-image: url("https://res.cloudinary.com/dm0710/image/upload/v1631607797/our%20team/WhatsApp_Image_2021-09-14_at_13.30.09_2_whqzil.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  </style>
+<font color="#FFFFFF">
+
+  
+{% if user.is_authenticated %}
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <div class="container-fluid">
+    <a href="#"><img src="https://res.cloudinary.com/dm0710/image/upload/b_rgb:000000,bo_1px_solid_rgb:425877,c_fit,g_center,o_100,q_auto:best,r_0,w_101/v1631563445/our%20team/me_o2nzup.jpg">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">About Us</a>
+        </li>      
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">Team FitX</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>     
+   
+      </ul>
+      <ul class="nav justify-content-end">
+        <li class="nav-item"> 
+          <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+        </li>
+      </ul>
+
+  </div>
+  </div>
+</nav>
+</head>
+<p align="center">
+  <h2 align="center">Hi {{ user.username }}!<br><h3 align="center">Welcome to your fitness journey with FitX</h3></h2>
+  <br><br><br><br><p align="center"><a href="{% url 'main' %}"><button>Proceed to your workouts</button></a></p>
+</p> 
+  
+{% else %}
+<head>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/29ecae9da7.js"></script>
+</head>  
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <div class="container-fluid">
+    <a href="#"><img src="https://res.cloudinary.com/dm0710/image/upload/b_rgb:000000,bo_1px_solid_rgb:425877,c_fit,g_center,o_100,q_auto:best,r_0,w_101/v1631563445/our%20team/me_o2nzup.jpg" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">About Us</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">Team FitX</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        
+      </ul>
+      <ul class="nav justify-content-end">
+        <li class="nav-item"> 
+          <a class="nav-link" href="{% url 'login' %}">Get Started</a>
+        </li></i>
+      </ul>
+  </div>
+  </div>
+</nav>
+  <form method="post">
+    <div class="container-center-horizontal">
+  <div class="mobile375signup screen" data-id="00C3E115-51C3-4CE2-A6F3-033CDA9A9DF2">
+
+    <!--FONT-->
+    
+    <h1 align ='center' class="title" data-id="Label_48b027ad-1075-4015-ba32-55bb5648fa89" >FitX</h1>
+    <h2 align ='center' class="title" data-id="Label_48b027ad-1075-4015-ba32-55bb5648fa89"><marquee direction="right">Workouts made easy!</marquee></h2>
+    
+      
+
+        <!--carousel for features-->
+
+        <!--CSS FOR Bootstrap@5-->
+        
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://res.cloudinary.com/dm0710/image/upload/v1631773646/man-woman-fitness_ohqn2j.jpg" class="d-block w-100"  width="500" height="550"alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <style>
+                .carousel-caption {
+                    color:white;
+                    -webkit-text-stroke-width: 3px;
+                    -webkit-text-stroke-color: black;
+                }
+                </style>
+              <font size= "20px" ><b><strong>Gender based routines</strong></b></font><br>
+              <font size= "50px" ><b><strong>Different exercises and routines for both genders.</strong></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dm0710/image/upload/v1631773643/nutrition_mourzb.jpg" class="d-block w-100" width="500" height="550" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <style>
+                .carousel-caption {
+                    color:white;
+                    -webkit-text-stroke-width: 3px;
+                    -webkit-text-stroke-color: black;
+                }
+                </style>
+              <font size= "30px"><b><strong>Nutrition guidances</strong></b></font><br>
+            <font size ="50px"><b><strong>Nutrition tips and tricks for better recovery and healthy lifestyle.</strong></b></font>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dm0710/image/upload/v1631773643/expert_tips_irnbuo.jpg"class="d-block w-100"  width="500" height="550" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <style>
+                .carousel-caption {
+                    color:white;
+                    -webkit-text-stroke-width: 3px;
+                    -webkit-text-stroke-color: black;
+                }
+                </style>
+              <font size= "20px"><b><strong>Expert Tips</strong></b></font><br>
+            <font size ="50px"><b><strong>Tips, guidances and more to guide you towards a safe and healty workout.</strong></b></font>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--JS BUNDLE-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+  <!-- Copyright -->
+<footer>  
+  <br>
+  <br>
+  <div class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="#">TeamFitX.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!--js bundle-->
+
+
+{% endif %}
+{% endblock %}
